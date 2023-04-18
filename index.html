@@ -1,0 +1,1249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar">
+    <a class="btn ms-3" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">
+        <i class="bi bi-list fs-4"></i>
+    </a>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvas"  aria-labelledby="offcanvasScrollingLabel">
+        <div style="margin-top: 1rem; margin-right: 1rem; margin-left: 1rem " >
+            <!-- logo e chiudi -->
+            <div class="offcanvas-header" >
+                <img src="/foto/logo.png" class="offcanvas-title" id="offcanvasScrollingLabel" alt="Logo">
+                <button type="button" class="btn-close small" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- search -->
+            <form class="search-form">
+                <input type="text" placeholder="What do you want to find?">
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+            <!-- elementi -->
+            <div style="overflow-y: auto; min-width: 600px">
+                <div class="ps-2 pe-3" style="max-width: 399px">
+                    <div class="hover-box">
+                        <h5><strong>U.S.</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                    <div class="tooltip-elem"><a href="#">Elections</a></div>
+                    <div class="tooltip-elem"><a href="#">Politics</a></div>
+                    <div class="tooltip-elem"><a href="#">Ukraine</a></div>
+                    <div class="tooltip-elem"><a href="#">Abortion News</a></div>
+                    <div class="tooltip-elem"><a href="#">Factcheck</a></div>
+                    <div class="tooltip-elem"><a href="#">Visual Explainers</a></div>
+                    <div class="tooltip-elem"><a href="#">Coronavirus</a></div>
+                    <div class="tooltip-elem"><a href="#">Newsletters</a></div>
+                    <div class="tooltip-elem"><a href="#">Race in America</a></div>
+                    <div class="tooltip-elem"><a href="#">World</a></div>
+                    <div class="tooltip-elem"><a href="#">Investigations</a></div>
+                    <div class="tooltip-elem"><a href="#">Health</a></div>
+                    <div class="tooltip-elem"><a href="#">Education</a></div>
+                    <div class="tooltip-elem"><a href="#">Weather</a></div>
+                    <div class="tooltip-elem"><a href="#">Just the FAQs</a></div>
+                    <div class="tooltip-elem"><a href="#">Vertical Storytelling</a></div>
+
+                </span>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Sports</strong></h5>
+                        <div class="rectangle" style="background-color: #d0021B"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                    <div class="tooltip-elem"><a href="#">NFL</a></div>
+                    <div class="tooltip-elem"><a href="#">MLB</a></div>
+                    <div class="tooltip-elem"><a href="#">NBA</a></div>
+                    <div class="tooltip-elem"><a href="#">NHL</a></div>
+                    <div class="tooltip-elem"><a href="#">Golfweek</a></div>
+                    <div class="tooltip-elem"><a href="#">Super Bowl</a></div>
+                    <div class="tooltip-elem"><a href="#">NCAAF</a></div>
+                    <div class="tooltip-elem"><a href="#">NCAAB</a></div>
+                    <div class="tooltip-elem"><a href="#">NCAAW</a></div>
+                    <div class="tooltip-elem"><a href="#">NCAA Tournament</a></div>
+                    <div class="tooltip-elem"><a href="#">Tennis</a></div>
+                    <div class="tooltip-elem"><a href="#">IndyCar</a></div>
+                    <div class="tooltip-elem"><a href="#">Odds</a></div>
+                    <div class="tooltip-elem"><a href="#">For The Win</a></div>
+                    <div class="tooltip-elem"><a href="#">NASCAR</a></div>
+                    <div class="tooltip-elem"><a href="#">Fantasy</a></div>
+                    <div class="tooltip-elem"><a href="#">Soccer</a></div>
+                    <div class="tooltip-elem"><a href="#">MMA</a></div>
+                    <div class="tooltip-elem"><a href="#">Boxing</a></div>
+                    <div class="tooltip-elem"><a href="#">Sports Betting</a></div>
+                    <div class="tooltip-elem"><a href="#">Sports Pulse</a></div>
+                    <div class="tooltip-elem"><a href="#">WNBA</a></div>
+                    <div class="tooltip-elem"><a href="#">Weekly Pulse</a></div>
+                    <div class="tooltip-elem"><a href="#">Boxing</a></div>
+                    <div class="tooltip-elem"><a href="#">Outdoors</a></div>
+                    <div class="tooltip-elem"><a href="#">Olympics</a></div>
+                    <div class="tooltip-elem"><a href="#">Buy Tickets</a></div>
+                </span>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Entertainment</strong></h5>
+                        <div class="rectangle" style="background-color: mediumpurple"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                    <div class="tooltip-elem"><a href="#">Celebrities</a></div>
+                    <div class="tooltip-elem"><a href="#">TV</a></div>
+                    <div class="tooltip-elem"><a href="#">Movies</a></div>
+                    <div class="tooltip-elem"><a href="#">Music</a></div>
+                    <div class="tooltip-elem"><a href="#">Books</a></div>
+                    <div class="tooltip-elem"><a href="#">Crosswords</a></div>
+                    <div class="tooltip-elem"><a href="#">Games</a></div>
+                    <div class="tooltip-elem"><a href="#">TV Listings</a></div>
+                    <div class="tooltip-elem"><a href="#">Entertain THIS!</a></div>
+                    <div class="tooltip-elem"><a href="#">Celebrity Deaths</a></div>
+                    <div class="tooltip-elem"><a href="#">Oscars</a></div>
+                    <div class="tooltip-elem"><a href="#">American Influencer Awards</a></div>
+                    <div class="tooltip-elem"><a href="#">American Influencer Awards</a></div>
+                </span>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Life</strong></h5>
+                        <div class="rectangle" style="background-color: #aa50e6"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                    <div class="tooltip-elem"><a href="#">Wellness</a></div>
+                    <div class="tooltip-elem"><a href="#">Food</a></div>
+                    <div class="tooltip-elem"><a href="#">Humankind</a></div>
+                    <div class="tooltip-elem"><a href="#">Problem Solved</a></div>
+                    <div class="tooltip-elem"><a href="#">Holidays</a></div>
+                    <div class="tooltip-elem"><a href="#">Comics</a></div>
+
+                </span>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Money</strong></h5>
+                        <div class="rectangle" style="background-color: #3cc37d"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                    <div class="tooltip-elem"><a href="#">Personal Finance</a></div>
+                    <div class="tooltip-elem"><a href="#">Cars</a></div>
+                    <div class="tooltip-elem"><a href="#">Retirement</a></div>
+                    <div class="tooltip-elem"><a href="#">Investing</a></div>
+                    <div class="tooltip-elem"><a href="#">Careers</a></div>
+                    <div class="tooltip-elem"><a href="#">Small Business</a></div>
+                    <div class="tooltip-elem"><a href="#">Business</a></div>
+                    <div class="tooltip-elem"><a href="#">Consumer Recals</a></div>
+
+                </span>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Tech</strong></h5>
+                        <div class="rectangle" style="background-color: #fa9632"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                    <div class="tooltip-elem"><a href="#">Product Reviews</a></div>
+                    <div class="tooltip-elem"><a href="#">Video Games</a></div>
+                    <div class="tooltip-elem"><a href="#">Tech Tips</a></div>
+                    <div class="tooltip-elem"><a href="#">Reviewed.com</a></div>
+                    <div class="tooltip-elem"><a href="#">Inequity in Silicon Valley</a></div>
+                    <div class="tooltip-elem"><a href="#">Problem Solved</a></div>
+
+                </span>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Travel</strong></h5>
+                        <div class="rectangle" style="background-color: #19c8d2"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                    <div class="tooltip-elem"><a href="#">Destinations</a></div>
+                    <div class="tooltip-elem"><a href="#">Airline News</a></div>
+                    <div class="tooltip-elem"><a href="#">Cruises</a></div>
+                    <div class="tooltip-elem"><a href="#">Experience America</a></div>
+                    <div class="tooltip-elem"><a href="#">10 Best</a></div>
+
+                </span>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Opinion</strong></h5>
+                        <div class="rectangle" style="background-color: #7E7BF2"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                            <div class="tooltip-elem"><a href="#">Today's Debate</a></div>
+                            <div class="tooltip-elem"><a href="#">Columnist</a></div>
+                            <div class="tooltip-elem"><a href="#">Voices</a></div>
+                            <div class="tooltip-elem"><a href="#">Policing in the USA</a></div>
+                            <div class="tooltip-elem"><a href="#">Race in America</a></div>
+
+                        </span>
+                    </div>
+
+                    <div class="hover-box">
+                        <h5><strong>For Subscribers</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Weather</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Investigations</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Crosswords</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Humankind</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Newsletters</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Support Local</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Coupons</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Give Feedback</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>Media</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                        <span class="arrow"><i class="bi bi-caret-right"></i></span>
+                        <span class="tooltiptext">
+                    <div class="tooltip-elem"><a href="#">Latest</a></div>
+                    <div class="tooltip-elem"><a href="#">Popular</a></div>
+                        </span>
+                    </div>
+                    <div class="hover-box">
+                        <h5><strong>For You</strong></h5>
+                        <div class="rectangle" style="background-color: #009BFF"></div>
+                    </div>
+
+
+                    <!-- most recent stories -->
+                    <h4 class="mb-3 mt-4 ms-3 text-black small">MOST RECENT STORIES</h4>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Money</h5>
+                        <p style="font-family: unify serif; font-size: 17px">Head of Anheuser-Busch beer brands responds to Dylan Mulvaney backlash</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Politics</h5>
+                        <p style="font-family: unify serif; font-size: 17px">How Teixeira penetrated the Pentagon's most secure computer system</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">WNBA</h5>
+                        <p style="font-family: unify serif; font-size: 17px">2023 WNBA draft tracker: All the selections</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Nation</h5>
+                        <p style="font-family: unify serif; font-size: 17px">Colleagues mourn 'son of Louisville,' other bank shooting victims</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Nation</h5>
+                        <p style="font-family: unify serif; font-size: 17px">Florida nurse stole fentanyl and replaced it with saline at surgery center</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Nation</h5>
+                        <p style="font-family: unify serif; font-size: 17px">2 dads exchanged gunfire in Florida road rage fight; daughters shot</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Columnists</h5>
+                        <p style="font-family: unify serif; font-size: 17px">Trump, afraid of losing, begs DeSantis not to run for president</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Big 12</h5>
+                        <p style="font-family: unify serif; font-size: 17px">Texas coach: Quinn Ewers, not Arch Manning, is starting QB</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Graphics</h5>
+                        <p style="font-family: unify serif; font-size: 17px">18,000 cows, 26 football fields' worth, killed in dairy farm fire</p>
+                    </div>
+                    <div class="ms-3 mt-3 pe-3 small text-black">
+                        <h5 style="font-size: medium">Politics</h5>
+                        <p style="font-family: unify serif; font-size: 17px">How one Christian man’s fight for Sundays off may transform the workplace</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="navbar-logo">
+        <img src="/foto/logo.png" alt="Logo">
+    </div>
+    <ul class="navbar-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">U.S</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Life</a></li>
+        <li><a href="#">Money</a></li>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Travel</a></li>
+        <li><a href="#">Opinion</a></li>
+        <li><a href="#">For Subsribers</a></li>
+        <li><a href="#">Weather</a></li>
+        <li><a href="#">Investigations</a></li>
+        <li><a href="#">Humankind</a></li>
+        <li><a href="#">Support Local</a></li>
+        <li><a href="#">Coupons</a></li>
+        <li><a href="#">Give Feedback</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">For You</a></li>
+    </ul>
+</nav>
+
+<!-- corpo del sito -->
+<section id="intro">
+    <div style="height: 55px"></div>
+    <div class="container-lg">
+        <!-- prima riga-->
+        <div class="container-lg-custom">
+            <div class="row justify-content-center align-items-start mb-5" >
+                <!--main news -->
+                <div class="col-md-7 col-lg-5 text-start pb-3">
+                    <div class="container-img-text">
+                        <div class="imag-wrapper">
+                            <img src="/foto/FirstNews.webp" alt="foto main news">
+                        </div>
+                        <a href=""><p>Women were once banned from combat. Now they're on the front lines.</p></a>
+                        <p style="padding-top: 15px">Ten years after the Pentagon repealed the ban on women in ground combat positions, female soldiers have risen in the ranks of frontline units.</p>
+                    </div>
+                </div>
+                <!-- news secondary -->
+                <div class="col-md-5 col-lg-3 text-start">
+                    <div class="container-img-text-sec">
+                        <div class="imag-wrapper-sec">
+                            <img src="/foto/SecondaryNewsSopra.jpg" alt="foto main news">
+                        </div>
+                        <a href=""><p>Shooting in Alabama leaves 4 dead, multiple people injured: Updates</p></a>
+                    </div>
+
+                    <div class="container-img-text-sec">
+                        <div class="imag-wrapper-sec">
+                            <img src="/foto/SecondaryNewsSotto.jpg" alt="foto main news">
+                        </div>
+                        <a href=""><p>'Big shift' in cancer treatment? mRNA vaccine shows promise against melanoma</p></a>
+                    </div>
+                </div>
+
+                <!-- news extra -->
+                <div class="col-md-4 d-lg-block d-none">
+                    <div class="p-3">
+                        <a class="custom-link" href="#">
+                            <p>MATCHDAY: Leeds vs Liverpool in EPL; Fiorentina vs Atalanta</p>
+                        </a>
+                        <small class="text-muted"><strong>Soccer</strong> | 3 hours ago</small>
+                    </div>
+                    <div class="p-3">
+                        <a class="custom-link" href="#">
+                            <p>The Phantom of the Opera is closing after 35 years on Broadway</p>
+                        </a>
+                        <small class="text-muted"><strong>Graphics</strong> | 3 hours ago</small>
+                    </div>
+                    <div class="p-3">
+                        <a class="custom-link" href="#">
+                            <p>Here's how these travelers save money on everyday expenses to travel</p>
+                        </a>
+                        <small class="text-muted"><strong>Travel</strong> | 3 hours ago</small>
+                    </div>
+                    <div class="p-3">
+                        <a class="custom-link" href="#">
+                            <p>Video shows discovery of ships that mysteriously vanished in 1914</p>
+                        </a>
+                        <small class="text-muted"><strong>Nation</strong> | 3 hours ago</small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="news" class="bg-light">
+    <div class="container-lg pt-3" >
+        <!-- seconda riga-->
+        <div class="row justify-content-center align-items-lg-start">
+            <!--zona sinista -->
+            <div class="col-lg-4 text-center d-lg-block d-none me-3 pt-4" >
+                <!-- Advertisement -->
+                <div class="bg-white p-4" style="min-height: 650px" >
+                    <img src="/foto/share.png" alt="share" style="max-width: 100%;">
+                    <h6 class="pt-5 text-muted">Advertisement</h6>
+                </div>
+                <!-- Inizio More stories -->
+                <div class="my-3 text-start">
+                    <h4 class="Section-Title-News">More Stories</h4>
+                </div>
+                <div class="bg-white" style="min-height: 4301px">
+                    <div class="row align-items-start text-start">
+                        <!-- parte notizia -->
+                        <div class="col-md-7">
+                            <div class="ps-4 pe-2 pt-3 pb-1">
+                                <a class="custom-link-left" href="#">
+                                    <p>Foreboding piles of snow: A heatwave in the West could be devastating</p>
+                                </a>
+                                <p class="text-muted text-start" style="margin-bottom:5px; font-size: 12px"><strong>Nation</strong></p>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-md-4 pt-3" style="padding: 0.25rem">
+                            <img src="foto/immagini%20colonna%20sinistraMore%20stories/More1.jpg" class="img-thumbnail border-0 rounded-0 p-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <div class="row align-items-start text-start">
+                        <!-- parte notizia -->
+                        <div class="col-md-7">
+                            <div class="ps-4 pe-2 pt-3 pb-1">
+                                <a class="custom-link-left" href="#">
+                                    <p>Walgreens employee shoots pregnant shoplifting suspect, forcing emergency C-section</p>
+                                </a>
+                                <small class="text-muted text-start" style="margin-bottom:5px; font-size: 12px"><strong>Nation</strong></small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-md-4 pt-3" style="padding: 0.25rem">
+                            <img src="foto/immagini%20colonna%20sinistraMore%20stories/More2.jpg" class="img-thumbnail border-0 rounded-0 p-0" alt="notizia 2">
+                        </div>
+                    </div>
+                    <div class="row align-items-start text-start">
+                        <!-- parte notizia -->
+                        <div class="col-md-7">
+                            <div class="ps-4 pe-2 pt-3 pb-1">
+                                <a class="custom-link-left" href="#">
+                                    <p>Head of Anheuser-Busch beer brands responds to Dylan Mulvaney backlash</p>
+                                </a>
+                                <small class="text-muted text-start" style="margin-bottom:5px; font-size: 12px"><strong>Money</strong></small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-md-4 pt-3" style="padding: 0.25rem">
+                            <img src="foto/immagini%20colonna%20sinistraMore%20stories/More3.jpg" class="img-thumbnail border-0 rounded-0 p-0" alt="notizia 3">
+                        </div>
+                    </div>
+                    <div class="row align-items-start text-start">
+                        <!-- parte notizia -->
+                        <div class="col-md-7">
+                            <div class="ps-4 pe-2 pt-3 pb-1">
+                                <a class="custom-link-left" href="#">
+                                    <p>HS cancels remainder of baseball season after team walkout</p>
+                                </a>
+                                <small class="text-muted text-start" style="margin-bottom:5px; font-size: 12px"><strong>High School Sports</strong></small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-md-4 pt-3" style="padding: 0.25rem">
+                            <img src="foto/immagini%20colonna%20sinistraMore%20stories/More4.jpg" class="img-thumbnail border-0 rounded-0 p-0" alt="notizia 4">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- zona notizie-->
+            <div class="col col-md-12 col-lg-7 p-1 pt-4">
+                <!-- Inizio Top stories -->
+                <div class="bg-white pt-2 pb-3">
+                    <!-- 1 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>Mifepristone 'safer than Tylenol,' experts say amid court battle</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Nation</strong> | 4 minutes ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News1.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 2 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>Clarence Thomas reported income from defunct real estate firm: report</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Politics</strong> | 8 hours ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News2.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 3 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>Bids to ban CRT have come in every state but one, database shows</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Education</strong> | 5 hours ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News3.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 4 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>What is oxidative stress? Everything you need to know.</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Health And Wellness</strong> | 1 hour ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News4.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 5 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>Bills' Damar Hamlin cleared for return 3 months after cardiac arrest</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>World</strong> | 12 hours ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News5.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 6 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>Boston shocker: World record-holder falters; Obiri wins in 2nd marathon</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Sports</strong> | 56 minutes ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News6.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 7 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>La. woman with 5-foot afro sets Guinness World Record for the 3rd time</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Nation</strong> | 2 hours ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News7.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 8 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>Air National Guardsman charged after applying to be a hitman for $5,000</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Nation</strong> | 28 minutes ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News8.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 9 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>Keanu Reeves, Alexandra Grant share kiss on red carpet: See the photo</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Celebrities</strong> | 4 hours ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News9.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 10 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>McDonald's says it's improving its burgers: Here's what's changing</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Food</strong> | 2 hours ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News10.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                    <!-- 11 notizia-->
+                    <div class="row align-items-start pb-3">
+                        <!-- parte notizia -->
+                        <div class="col-7">
+                            <div class="more-news-padding">
+                                <a class="custom-link-news" href="#">
+                                    <p>Boy rescued from claw game at NC theme park after trying to steal prize</p>
+                                </a>
+                                <small class="text-muted text-start"><strong>Nation</strong> | 7 hours ago</small>
+                            </div>
+                        </div>
+                        <!-- parte immagine -->
+                        <div class="col-4 pt-3">
+                            <img src="foto/immagini%20colonna%20destra%20extra%20news/News11.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="notizia 1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inizio sezione news -->
+                <div class="row mt-3 mb-2">
+                    <div class="col">
+                        <h4 class="Section-Title-News">News</h4>
+                    </div>
+                    <div class="col text-end me-4">
+                        <a href="#" class="text-black"><i class="bi bi-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <!-- motizia principale -->
+                    <div class="container-img-text-ex mb-0">
+                        <div class="imag-wrapper-ex">
+                            <img src="/foto/Sezione%20News/MainNews.jpg" alt="foto main news">
+                        </div>
+                        <div class="future-col">
+                            <a href=""><p>Blizzard blasts western Great Lakes as US endures major cooldown</p></a>
+                            <p class="text-muted text-start small"><strong>Nation</strong> | 10 hours ago</p>
+                        </div>
+                    </div>
+                    <!-- notizie secondarie -->
+                    <div class="row align-items-start p-1 g-1">
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20News/ExtraNews1.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Eagle who nurtured rock as egg becomes foster dad to injured baby bird</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20News/ExtraNews2.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Americans want math curricula more relevant to real world, survey shows</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20News/ExtraNews3.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Air National Guardsman charged after applying to be a hitman for $5,000</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn text-center" data-bs-toggle="collapse" href="#othernews" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none">
+                            Show More <strong>News</strong> <i class="bi bi-caret-down"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="othernews">
+                        <div class="row align-items-start p-1 g-1">
+                            <div class="col ">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20News/ExtraNews4.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Severe storms, gusty winds to hit Plains: Tuesday updates</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20News/ExtraNews5.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>GOP hearing in NYC draws outbursts. Here are the key moments</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20News/ExtraNews6.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Spanish woman leaves cave after 500 days in isolation</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inizio sezione Sport -->
+                <div class="row mt-3 mb-2">
+                    <div class="col">
+                        <h4 class="Section-Title-Sport">Sport</h4>
+                    </div>
+                    <div class="col text-end me-4">
+                        <a href="#" class="text-black"><i class="bi bi-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <!-- motizia principale -->
+                    <div class="container-img-text-ex mb-0">
+                        <div class="imag-wrapper-ex">
+                            <img src="/foto/Sezione%20Sport/MainSport.jpg" alt="foto main news">
+                        </div>
+                        <div class="future-col">
+                            <a href=""><p>Winners, losers of Eagles QB Jalen Hurts' record-setting deal</p></a>
+                            <p class="text-muted text-start"><strong>Nate Davis</strong> | 3 hours ago</p>
+                        </div>
+
+                    </div>
+                    <!-- notizie secondarie -->
+                    <div class="row align-items-start p-1 g-1">
+                        <div class="col ">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Sport/ExtraSport1.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Ohio State coordinator was drinking before crash, sheriff's</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Sport/ExtraSport2.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Basketball league in China DQs two playoff teams over match-fixing</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Sport/ExtraSport3.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>NBA playoff openers winners: Kings rise; injury rattles Grizzlies</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn text-center" data-bs-toggle="collapse" href="#othersport" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none">
+                            Show More <strong>Sport</strong> <i class="bi bi-caret-down"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="othersport">
+                        <div class="row align-items-start p-1 g-1">
+                            <div class="col ">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Sport/ExtraSport4.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Westbrook gets into heated exchange with Suns fan</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Sport/ExtraSport5.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>NHL first round-playoff picks: Eight series kick for Stanley Cup</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Sport/ExtraSport6.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Boston shocker: World record-holder Obiri wins in 2nd marathon</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inizio sezione Entertainment -->
+                <div class="row mt-3 mb-2"  >
+                    <div class="col">
+                        <h4 class="Section-Title-Entertainment">Entertainment</h4>
+                    </div>
+                    <div class="col text-end me-4">
+                        <a href="#" class="text-black"><i class="bi bi-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <!-- motizia principale -->
+                    <div class="container-img-text-ex mb-0">
+                        <div class="imag-wrapper-ex">
+                            <img src="/foto/Sezione%20Entertainment/MainEnt.jpg" alt="foto main news">
+                        </div>
+                        <div class="future-col">
+                            <a href=""><p>Willow Smith makes Coachella her 'spot' in thrilling performance</p></a>
+                            <p class="text-muted text-start"><strong>Music</strong> | 3 hours ago</p>
+                        </div>
+
+                    </div>
+                    <!-- notizie secondarie -->
+                    <div class="row align-items-start p-1 g-1">
+                        <div class="col ">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Entertainment/ExtraEnt1.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Granger Smith is leaving country music to pursue church ministry</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Entertainment/ExtraEnt2.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Movie biopics we can't wait to see: Whitney Houston, Madonna, Bob Dylan, more</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Entertainment/ExtraEnt3.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Halle Berry outraged after Black teen shot by homeowner: 'Sick and tired'</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn text-center" data-bs-toggle="collapse" href="#otherEntertainment" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none">
+                            Show More <strong>Entertainment</strong> <i class="bi bi-caret-down"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="otherEntertainment">
+                        <div class="row align-items-start p-1 g-1">
+                            <div class="col ">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Entertainment/ExtraEnt4.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Justin Long and Kate Bosworth confirm engagement</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Entertainment/ExtraEnt5.png" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Time 100 revealed: Angela Bassett e Austin Butler make 2023 list</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Entertainment/ExtraEnt6.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Janet Jackson digs deep for career-spanning 2023 tour: See set list</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inizio sezione Life -->
+                <div class="row mt-3 mb-2">
+                    <div class="col">
+                        <h4 class="Section-Title-Life">Life</h4>
+                    </div>
+                    <div class="col text-end me-4">
+                        <a href="#" class="text-black"><i class="bi bi-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <!-- motizia principale -->
+                    <div class="container-img-text-ex mb-0">
+                        <div class="imag-wrapper-ex">
+                            <img src="/foto/Sezione%20Life/MainLife.png" alt="foto main news">
+                        </div>
+                        <div class="future-col">
+                            <a href=""><p>This may be the answer to curing your anxiety</p></a>
+                            <p class="text-muted text-start"><strong>Health And Wellness</strong></p>
+                        </div>
+
+                    </div>
+                    <!-- notizie secondarie -->
+                    <div class="row align-items-start p-1 g-1">
+                        <div class="col ">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Life/ExtraLife1.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>La. woman with 5-foot afro sets Guinness World Record for the 3rd time</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Life/ExtraLife2.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Michelin starred restaurants: Here's what to expect when you visit one</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Life/ExtraLife3.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>What is the healthiest bread? These options can be part of a healthy diet.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn text-center" data-bs-toggle="collapse" href="#otherLife" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none">
+                            Show More <strong>Life</strong> <i class="bi bi-caret-down"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="otherLife">
+                        <div class="row align-items-start p-1 g-1">
+                            <div class="col ">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Life/ExtraLife4.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Celebrating today's woman</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Life/ExtraLife5.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>What is oxidative stress? What you need to know.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Life/ExtraLife6.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>What does yoga do for your body?</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inizio sezione Money -->
+                <div class="row mt-3 mb-2">
+                    <div class="col">
+                        <h4 class="Section-Title-Money">Money</h4>
+                    </div>
+                    <div class="col text-end me-4">
+                        <a href="#" class="text-black"><i class="bi bi-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <!-- motizia principale -->
+                    <div class="container-img-text-ex mb-0">
+                        <div class="imag-wrapper-ex">
+                            <img src="/foto/Sezione%20Money/MainMoney.jpg" alt="foto main news">
+                        </div>
+                        <div class="future-col">
+                            <a href=""><p>David's Bridal files for bankruptcy</p></a>
+                            <p class="text-muted text-start"><strong>Retail</strong> | 3 hours ago</p>
+                        </div>
+
+                    </div>
+                    <!-- notizie secondarie -->
+                    <div class="row align-items-start p-1 g-1">
+                        <div class="col ">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Money/ExtraMoney1.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>BMW and others no longer qualify for EV tax credits</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Money/ExtraMoney2.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>The Daily Money is here: Are you on the list?</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/Sezione%20Money/ExtraMoney3.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>McDonald's says it's improving its burgers: Here's what's changing</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn text-center" data-bs-toggle="collapse" href="#otherMoney" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none">
+                            Show More <strong>Money</strong> <i class="bi bi-caret-down"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="otherMoney">
+                        <div class="row align-items-start p-1 g-1">
+                            <div class="col ">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Money/ExtraMoney4.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Subaru, Jaguar Land Rover recall 5,000 vehicles: check recalls</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Money/ExtraMoney5.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>Gas prices on the rise, with sharp rise expected soon in some states</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/Sezione%20Money/ExtraMoney6.png" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>The deadline to file taxes was extended in these states</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inizio sezione Tech -->
+                <div class="row mt-3 mb-2">
+                    <div class="col">
+                        <h4 class="Section-Title-Tech">Tech</h4>
+                    </div>
+                    <div class="col text-end me-4">
+                        <a href="#" class="text-black"><i class="bi bi-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <!-- motizia principale -->
+                    <div class="container-img-text-ex mb-0">
+                        <div class="imag-wrapper-ex">
+                            <img src="/foto/SezioneTech/MainTech.jpg" alt="foto main news">
+                        </div>
+                        <div class="future-col">
+                            <a href=""><p>She’s Birdie Review</p></a>
+                            <p class="text-muted text-start"><strong>Reviews</strong> | 9 hours ago</p>
+                        </div>
+
+                    </div>
+                    <!-- notizie secondarie -->
+                    <div class="row align-items-start p-1 g-1">
+                        <div class="col ">
+                            <div class="borderholder">
+                                <img src="/foto/SezioneTech/ExtraTech1.png" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Spotify is shutting Heardle down a year after the Wordle craze. Why?</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/SezioneTech/ExtraTech2.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>BMW, Nissan and other automakers no longer qualify for EV tax credits</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="borderholder">
+                                <img src="/foto/SezioneTech/ExtraTech3.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                <div class="p-2 text-start">
+                                    <a class="custom-link" href="#" style="font-size: 16px">
+                                        <p>Arby's brings back popular limited-edition Dungeons & Dragons dice set</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn text-center" data-bs-toggle="collapse" href="#otherTech" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none">
+                            Show More <strong>Tech</strong> <i class="bi bi-caret-down"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="otherTech">
+                        <div class="row align-items-start p-1 g-1">
+                            <div class="col ">
+                                <div class="borderholder">
+                                    <img src="/foto/SezioneTech/ExtraTech4.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>SpaceX aims for first orbital Starship launch from Texas</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/SezioneTech/ExtraTech5.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>What tech companies are doing to address deepfake pornography</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="borderholder">
+                                    <img src="/foto/SezioneTech/ExtraTech6.jpg" class="img-thumbnail border-0 p-0 rounded-0" alt="foto news secondaria">
+                                    <div class="p-2 text-start">
+                                        <a class="custom-link" href="#" style="font-size: 16px">
+                                            <p>How will AI affect doctor and patient relationship?</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="footing" class="bg-light pt-4">
+    <div class="container-fluid d-flex flex-wrap justify-content-start">
+        <div class="row ps-3">
+            <ul class="horizzontal-list">
+                <li><a href="#" class="nav-link text-black">Help </a></li>
+                <li><a href="#" class="nav-link text-black">Terms of service </a></li>
+                <li><a href="#" class="nav-link text-black">Subscription Terms & Conditions </a></li>
+                <li><a href="#" class="nav-link text-black">Your California Privacy Rights/Privacy Policy </a></li>
+                <li><a href="#" class="nav-link text-black">Site Map </a></li>
+                <li><a href="#" class="nav-link text-black">Accessibility </a></li>
+                <li><a href="#" class="nav-link text-black">Our Ethical Principles </a></li>
+                <li><a href="#" class="nav-link text-black"><strong>Manage Cookies </strong></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid d-flex flex-wrap justify-content-start ms-1">
+        <div class="row ps-3 pt-3">
+            <ul class="nav">
+                <a href="#" class="nav-link px-2 "><img src="/foto/footer%20icons/facebook.png" alt="icona facebook" class="footer-icon"></a>
+                <a href="#" class="nav-link px-2 "><img src="/foto/footer%20icons/twitter.png" alt="icona twitter" class="footer-icon"></a>
+                <a href="#" class="nav-link px-2 "><img src="/foto/footer%20icons/snapchat.png" alt="icona snap" class="footer-icon"></a>
+                <a href="#" class="nav-link px-2 "><img src="/foto/footer%20icons/instagram.png" alt="icona instagram" class="footer-icon"></a>
+                <a href="#" class="nav-link px-2 "><img src="/foto/footer%20icons/linked-In.png" alt="icona linked-in" class="footer-icon"></a>
+                <a href="#" class="nav-link px-2 "><img src="/foto/footer%20icons/pinterest.png" alt="icona pinterest" class="footer-icon"></a>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid d-flex flex-wrap justify-content-start">
+        <h6 class="ps-3 pb-4 pt-4 small text-muted">@Copyright Gannett 2023</h6>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>
